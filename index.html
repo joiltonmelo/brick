@@ -9,6 +9,9 @@
     <link rel="icon" href="./img/favicon.png" type="image/x-icon">
 </head>
 
+<meta name="description" content="Oferecemos uma gama completa de serviços de desenvolvimento web e mobile, incluindo criação de sites responsivos, aplicativos móveis, e-commerce, e soluções sob medida para atender às necessidades específicas de cada cliente.">
+<meta name="keywords" content="ui, ui design, ux, ux design,  frontend, backend, programação, design, ui design, projetos web, web design, design gráfico, ">
+
 <style type="text/css">
 img {
 max-width:100%;
@@ -61,8 +64,15 @@ max-width:100%;
 
     </div>
 
-    <img src="./img/img-portfolio.png" alt="Img Portfólio" title="Prints de alguns projetos - Brick" class="hover:animate-pulse max-md:mt-16">
-
+    <!-- GALERIA -->
+    <div class="max-md:mt-20">
+      <img class="mySlides" src="./img/img-dcontroll.png" alt="DControll" class="rounded-lg" style="border-radius: 8px;">
+      <img class="mySlides" src="./img/img-cma.png" alt="CMA" class="rounded-lg" style="border-radius: 8px;">
+      <img class="mySlides" src="./img/img-linktwo.png"  alt="Linktwo" class="rounded-lg" style="border-radius: 8px;">
+      <img class="mySlides" src="./img/img-iab-rs.png" alt="IAB" class="rounded-lg" style="border-radius: 8px;">
+      <img class="mySlides" src="./img/img-luan.png" alt="LUAN Transportes" class="rounded-lg" style="border-radius: 8px;">
+    </div>
+    <!-- GALERIA -->
 </main>
 
 <footer class="border-t-2 border-violet-700 py-8 mt-20">
@@ -90,6 +100,23 @@ max-width:100%;
 </div> -->
 
 </footer>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 
 </body>
 </html>
